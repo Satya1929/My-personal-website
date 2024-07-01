@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Always need to take power from default */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outer_box {
+    
+    width: 100vw;
+    height: 100vw;
+    /* full size outer box done */
+
+    background: linear-gradient(to top left , rgb(8, 22, 228) , rgb(255, 1, 174) );
+}
+
+.inner_box {
+    width: 400px;
+    margin: 0 auto;
+
+    position: relative;
+    top: 15%;
+    /* transform: translate(-50%); */
+
+    padding: 20px 40px;
+
+    background: rgb(214, 208, 208);
+    backdrop-filter: blur(10px);
+
+    border-radius: 8px;
+    /* removed the sharp corners of box */
+
+    box-shadow: 3px 3px 20px #191c1d;
+
+    z-index: 2;
+    /* top layer */
+}
+
+.sign_up_header h1 {
+    font-size: 2.5rem;
+    color: #201010;
+}
+
+.sign_up_header p {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 2px;
+}
+
+.sign_up_body {
+    margin: 20px 0;
+}
+
+.sign_up_body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.sign_up_body p input {
+    width: 100%;
+    padding: 9px;
+    border: 3px solid #cccc;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.sign_up_body p input[type="submit"] {
+    background: linear-gradient(to top left , rgb(60, 72, 240) , rgb(233, 42, 172) );
+    font-size: medium;
+    font-weight: 700;
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sign_up_body p input[type="submit"]:hover {
+    background-color: #2948fc;
+}
+
+.sign_up_footer p {
+    color: #555;
+    text-align: center;
+}
+
+.sign_up_footer p a {
+    color: #1a34c8;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    position: absolute;
+}
+
+.c1 {
+    top: 10%;
+    left: 10%;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+
+}
+
+.c2 {
+    bottom: 10%;
+    right: 10%;
+    background: linear-gradient(to top left, #ffffff33, #ffffffff);
+}
